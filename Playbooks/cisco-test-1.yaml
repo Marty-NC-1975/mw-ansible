@@ -3,9 +3,4 @@
   tasks:
     - name: Run show version on remote devices
       cisco.ios.ios_command:
-        commands:
-          - show version
-      register: show_version_output
-    - name: Display the show version output
-      debug:
-        msg: "{{ show_version_output.stdout }}"
+        commands: show version
