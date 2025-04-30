@@ -1,6 +1,6 @@
 - hosts: all
-  gather_facts: no
+  gather_facts: false
   tasks:
     - name: Run show version on remote devices
-      cisco.ios.ios_command:
+      ios_command:
         commands: show version
